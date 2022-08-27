@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-)ic&0t_@&ai@v+9^3*t2y*ebhwonsx)2(+rtps*5_req_7oohs
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['care-apps-project.herokuapp.com']
+ALLOWED_HOSTS = ['care-ap.herokuapp.com']
 
 
 # Application definition
@@ -103,10 +103,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddjtpkfahvn9i1',
-        'USER': 'vymzzawbrxmsbp',
-        'PASSWORD': '747268fdb3dd2edc24faa0d959e1e62262d5eb4ff2d230acbed98045d42aecbc',
-        'HOST': 'ec2-34-201-95-176.compute-1.amazonaws.com',
+        'NAME': 'd4vhi1kt0o011',
+        'USER': 'axwvxpugxgdegw',
+        'PASSWORD': '0992af5bf759d34390e950f07992088443aaf1faa56c5bf5b62447343887c66c',
+        'HOST': 'ec2-44-209-186-51.compute-1.amazonaws.com',
         'Port': '5432'
     }
 }
