@@ -112,7 +112,7 @@ def update_profile_doctor(request):
         user = User.objects.filter(username=request.data['user'])
         if user:
             doc = Doctor.objects.filter(user=user[0])
-            profile = UpdateProfileDoctor(doc, data=request.data)
+            profile = UpdateProfileDoctor(doc[0], data=request.data)
             if profile.is_valid():
                 profile.save()
                 return Response({'msg': 'successful update profile doctor'}, status=HTTP_200_OK)

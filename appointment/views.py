@@ -178,4 +178,4 @@ def display_notification(requset,username):
     data = SendNotification(notis, many=True)
     for noti in notis:
         Notification.objects.filter(id=noti.id).update(read=True)
-    return Response({'data': data.data, 'cnt': cont}, status=HTTP_200_OK)
+    return Response(data= data.data, status=HTTP_200_OK)
