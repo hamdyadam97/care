@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-)ic&0t_@&ai@v+9^3*t2y*ebhwonsx)2(+rtps*5_req_7oohs
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['care-ap.herokuapp.com']
-
+ALLOWED_HOSTS = ['care-ap.herokuapp.com','https://final-alpha-nine.vercel.app']
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
