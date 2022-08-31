@@ -173,8 +173,7 @@ def send_notification(request,username):
 
 @api_view(['GET'])
 def display_notification(requset,username):
-    notis = Notification.objects.filter(owner=username, read=False)
-    cont = notis.count()
+    notis = Notification.objects.filter(owner=username).order_by('-id')
     data = SendNotification(notis, many=True)
     for noti in notis:
         Notification.objects.filter(id=noti.id).update(read=True)
