@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.admindocs',
     'docutils',
     'cloudinary_storage',
-    'cloudinary',
 ]
 
 MIDDLEWARE = [
