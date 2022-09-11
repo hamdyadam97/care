@@ -82,7 +82,6 @@ def make_appointment(request):
                                     return Response({'msg': day.strftime("%A"), 'hour': hour, 'date': day}, status=HTTP_200_OK)
                         else:
                             return Response({'msg': 'no profile patient '}, status=HTTP_400_BAD_REQUEST)
-
                     else:
                         return Response({'msg': 'no patient with name'}, status=HTTP_400_BAD_REQUEST)
                 else:

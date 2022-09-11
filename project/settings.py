@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
-
+import cloudinary_storage
 import django_heroku
 
 from .juzmine import JAZZMIN_SETTINGS
@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'django.contrib.admindocs',
     'docutils',
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -173,6 +175,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+CLOUDINARY_STORAGE = {
+    'cloud_name': "care-iti",
+    'api_key': "796658752722887",
+    'api_secret': "NkpXq1nmH8Vg-kOHHxcr-WRThuU"
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000'
 ]
