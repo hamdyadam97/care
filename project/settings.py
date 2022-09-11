@@ -176,9 +176,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 CLOUDINARY_STORAGE = {
-    'cloud_name': "care-iti",
-    'api_key': "796658752722887",
-    'api_secret': "NkpXq1nmH8Vg-kOHHxcr-WRThuU"
+    'CLOUD_NAME': "care-iti",
+    'API_KEY': "796658752722887",
+    'API_SECRET': "NkpXq1nmH8Vg-kOHHxcr-WRThuU"
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CORS_ORIGIN_WHITELIST = [
@@ -189,7 +189,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'carehospital841@gmail.com'
 EMAIL_HOST_PASSWORD = 'okbnbtwhjikpfyzp'
-
 EMAIL_USE_TLS = True
 EMAIL_PORT = '587'
 DEFAULT_FROM_EMAIL = 'default from email'
